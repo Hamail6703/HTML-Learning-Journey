@@ -1,0 +1,80 @@
+<!--other types of input!
+1. Date-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/contact.me">
+        Text: <input type="text"><br>
+        Date:<input type="date"><br>
+        File: <input type="file"><br>
+        Colour: <input type="color"><br>
+        Range: <input type="range"><br>
+        Button: <input type="button" value="poked"><br>
+        Submit: <input type="submit"><br>
+        <!--RADIO BUTTON:
+        1. Only one option can be slected.
+        2. The name should be same for each so  only one can be selected
+        3. The followinf code will only show three buttons, no label for each option-->
+        <input type="radio" id="male" name="gender" value="Male"><br>
+        <input type="radio" id="female" name="gender" value="Female"><br>
+        <input type="radio" id="other" name="gender" value="Other"><br>
+        <hr>
+        <br>
+        <!--RADIO BUTTON:
+        <1. add label so we know that which option we are slecting.
+        2. when we slect an option the form doesn't know that the label and radio button are connected so we need connect them by adding id in the input and label
+        3. After connecting with id, if we click on the word male, it will be selected or if we click on the radio button itself it will be selected then as well.
+        >-->
+        <label for="male">Male:</label>
+        <input type="radio" id="male" name="gender" value="Male"><br>
+        <label for="female">Female:</label>
+        <input type="radio" id="female" name="gender" value="Female"><br>
+        <label for="other">Other:</label>
+        <input type="radio" id="other" name="gender" value="Other"><br>
+
+        <!--Check BOX
+        1. Similar to radio button.
+        2. Can select more than one option.-->
+        <label for="c">C</label>
+        <input type="checkbox" name="language" id="c" value="c"><br>
+        <label for="java">Java</label>
+        <input type="checkbox" name="language" id="java" value="java"><br>
+        <label for="python">Python</label>
+        <input type="checkbox" name="language" id="python" value="python">
+
+
+
+        <!--SELECT <select>
+        1. to select from a drop down menu (e.g selecting country name)-->
+        <hr>
+        <label for="country">Select your Country:</label>
+        <select name="country" id="country">
+            <option value="Pakistan">Pakistan</option>
+            <option value="China">China</option>
+            <option value="Iran">Iran</option>
+        </select>
+
+    <!--TEXT AREA
+    1. Purpose: <textarea> is used for multi-line text input in forms.
+        - rows property: Specifies the visible number of lines.
+        - cols property: Sets the visible width measured in average character width.
+    2. Resizeable: Some browser allow users to manually resize the text box size.-->
+    <hr>
+    <textarea name="story" id="story" cols="20" rows="4">
+    Please write a story!f
+    </textarea>
+
+    <!--I FRAME TAG
+    1. To  include other websites in our page
+    2. Allows you to embed another webpage or multimedia content within a webpage.
+    3. src attribute: specifies the URL of the content to be embadded.
+    4. Dimensions: width and height can be set.-->
+    <iframe src="https://en.wikipedia.org/wiki/Main_Page" frameborder="1" height="300" width="200"></iframe>
+         </form>
+</body>
+</html>

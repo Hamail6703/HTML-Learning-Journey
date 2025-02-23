@@ -1,0 +1,54 @@
+<!--
+TABLE TAG
+1. <tr> Table row: used to define row in an HTML Table.
+2. <th> Table header: Used for header cells within a row. Text is bold and centered by default.
+3. <td> Table data: This holds the actual data
+    
+CAPTION FOR TABLE <caption>
+1. Purpose: Provides a title or description for a table.
+2. Placement: Must be inserted immediately after the table opening tag.
+3. Alignment: Centered above the table by default.
+4. Accessibility: Helps screen readers understand what the table is about.
+
+COL SPANS: colspan = " "
+1. Attribute: Uses the colspan attribute in <td> or <th>.
+2. Purpose: Allows a cell to span multiple colums.
+3. Alignment: Takes the space of the specifies number of columns.
+4. Layout: Used for combining cells to create complex tables.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+        <caption>Technologies</caption>
+        <tr>
+            <th colspan="3">Tech I am good at!</th>
+        </tr>
+        <tr>
+            <th>Language</th>
+            <th>Competency</th>
+            <th>Years</th>
+        </tr>
+        <tr>
+            <td>C</td>
+            <td>5/10</td>
+            <td>10 years</td>
+        </tr>
+        <tr>
+            <td>Java</td>
+            <td>8/10</td>
+            <td>9 years</td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                This is all I know!
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

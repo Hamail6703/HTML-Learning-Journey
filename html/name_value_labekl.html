@@ -1,0 +1,33 @@
+<!--
+NAME:
+1. ID for data : identifies from elements when submitting.
+2. Unique: Should be unique to each element for clearly.
+3. So we know the data that we are recieving is which data.  
+
+VALUE:
+1. Default Data: Data initial value for input element.
+2. Sent to Server: This is the data sent wher form is submitted.
+
+LABEL:
+1. Purpose: Adds a text description to form elements.
+2. For Attribute: Connects the label to a specific form element using the element's id.
+3. Accessibility: Makes the form more accessible.
+4. Readability: Enhances form readability and usability.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/contact.me">
+        <label for="name"></label>
+        Name: <input type ="text" id="name" placeholder="Enter your name!" required="True"><br>
+        <label for="user_password"></label>
+        Password:<input id="user_password" type="password"><br>
+        <input type="submit">
+     </form>
+</body>
+</html>
