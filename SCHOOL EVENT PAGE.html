@@ -1,0 +1,104 @@
+<!--School Event Page
+A webpage for a fictional (or real) school event, such as a science fair or sports day. Includes:
+
+Event details (date, time, location)
+A schedule of activities
+A short description of each activity
+A form for registration-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<header><big><b>PROJECT EXHIBITION</b></big></header>
+<nav>
+    <a href="#Event details">Event details.</a><br>
+    <a href="#Activities Schedule">Activities Schedule.</a><br>
+    <a href="#Activity description">Activity description.</a><br>
+    <a href="#Register Now!">Register Now!</a><br>
+    <a href="#Contact Us">Contact Us – Get in touch with us</a><br>
+</nav>
+
+<section id="Event details">
+    <h3>EVENT DETAILS</h3>
+    <p><p><strong>Date:</strong> March 15, 2025</p>
+    <p><strong>Time:</strong> 10:00 AM - 4:00 PM</p>
+    <p><strong>Location:</strong> ABC High School Auditorium</p>
+</section>
+
+<hr>
+<section id="Activities Schedule">
+    <h3>ACTIVITIES SCHEDULE</h3>
+    <table border="1">
+        <caption>The following schedule will be followed for the event:</caption>
+        <tr>
+            <th>Time</th>
+            <th>Activity</th>
+            <th>Location</th>
+        </tr>
+        <tr>
+            <td>10:00 AM</td>
+            <td>Opening Ceremony</td>
+            <td>Main Hall</td>
+        </tr>
+        <tr>
+            <td>11:00 AM</td>
+            <td>Project Exhibition</td>
+            <td>Exhibition Area</td>
+        </tr>
+        <tr>
+            <td>1:00 PM</td>
+            <td>Guest Speaker Session</td>
+            <td>Conference Room</td>
+        </tr>
+        <tr>
+            <td>3:00 PM</td>
+            <td>Award Ceremony</td>
+            <td>Main Hall</td>
+        </tr>
+    </table>
+</section>
+<hr>
+<section id="Activity description">
+    <h2>About the Activities</h2>
+    <p><b>Project Exhibition:</b> Students will showcase their innovative science projects.</p>
+    <p><strong>Guest Speaker Session:</strong> Learn from experts about the latest scientific discoveries.</p>
+    <p><strong>Award Ceremony:</strong> The best projects will be recognized and awarded.</p>
+</section>
+<hr>
+<section id="Register Now!">
+    <form>
+        <h2>Register for the Event</h2>
+        <form action="#" method="post"><!--So it will just refresh the page instead of sending data anywhere-->
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="grade">Grade Level:</label>
+            <input type="text" id="grade" name="grade" required><br><br>
+
+            <label>Would you like to present a project?</label><br>
+            <input type="radio" id="yes" name="project" value="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="project" value="no">
+            <label for="no">No</label><br><br>
+
+            <label for="comments">Additional Comments:</label><br>
+            <textarea id="comments" name="comments" rows="4" cols="40"></textarea><br><br>
+
+            <input type="submit" value="Register">
+    </form>
+</section>
+<hr>
+
+<footer id="Contact Us">
+    <p>For more details, contact us at <a href="abc:info@school.com">info@school.com</a></p>
+</footer>
+    
+</body>
+</html>
